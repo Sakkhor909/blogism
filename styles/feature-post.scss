@@ -1,0 +1,59 @@
+.featue-post-container {
+  width: 60%;
+  margin-left: 50px;
+  background-color: $primary-color;
+  height: 350px;
+  border-radius: 5px;
+  box-shadow: 7px 8px 10px rgba(0, 0, 0, 0.3);
+  .heading-section {
+    color: whitesmoke;
+    padding: 20px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    svg {
+      vertical-align: middle;
+    }
+  }
+  .feature-post {
+    padding-left: 20px;
+    display: flex;
+    width: 100%;
+    .image-section {
+      width: 50%;
+      background-color: $Gray;
+      height: 210px;
+      border: 16px groove whitesmoke;
+      position: relative;
+    }
+    .details-section {
+      width: 50%;
+      .title-section {
+        padding: 8px;
+        background-color: $Gray;
+        font-weight: bold;
+      }
+      .content-section {
+        padding: 8px;
+        text-align: center;
+      }
+    }
+  }
+  .read-more-btn {
+    border: 1px solid $black;
+    width: 20%;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 5px;
+    background-color: whitesmoke;
+    transition: 0.5s;
+    font-weight: bold;
+    svg {
+      font-size: 1.5rem;
+      vertical-align: middle;
+    }
+    &:hover {
+      background-color: $primary-color;
+      color: whitesmoke;
+    }
+  }
+}

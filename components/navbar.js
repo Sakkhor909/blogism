@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <aside>
       <Link href="/">
-        <a>Home</a>
+        <a className="active">Home</a>
       </Link>
 
       <Link href="/categories">

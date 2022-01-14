@@ -7,12 +7,30 @@
 
 $black: #333333;
 $primary-color: #18a0fb;
+$Gray: #c4c4c4;
 
 button {
   background-color: $primary-color;
   cursor: pointer;
 }
 
+.link-btn {
+  border: 1px solid $primary-color;
+  padding: 8px 20px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  color: $primary-color;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    background-color: $primary-color;
+    color: whitesmoke;
+  }
+}
+
 // Importing other css
 
 @import "header";
+@import "feature-post";

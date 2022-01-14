@@ -22,10 +22,10 @@ function Header() {
             <MdBrightness4 />
           </Button>
 
-          <a>
+          <a className="link-btn ">
             Login <MdLogin />
           </a>
-          <a className="register-btn">
+          <a className="link-btn register-btn">
             Register <MdAppRegistration />
           </a>
         </div>
