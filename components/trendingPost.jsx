@@ -1,6 +1,7 @@
 import HeadingContainer from "./presentational/headingContainer";
 import { MdTrendingUp } from "react-icons/md";
 import PostCard from "./TrendingPosts/postCard";
+import Link from "next/link";
 
 function TrendingPost() {
   return (
@@ -14,6 +15,9 @@ function TrendingPost() {
         <PostCard />
         <PostCard />
       </div>
+      <Link href="/">
+        <a className="view-all-btn">View All</a>
+      </Link>
     </>
   );
 }

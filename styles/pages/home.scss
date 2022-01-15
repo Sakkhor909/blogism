@@ -1,9 +1,13 @@
 .home-layout {
   display: flex;
+  flex-direction: column;
   width: 100%;
   padding: 0px 7%;
-  .first-column {
+  .first-row {
     display: flex;
-    flex-direction: column;
+    .first-column {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
