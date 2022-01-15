@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import { MdEvent, MdAssignmentInd, MdRestaurantMenu } from "react-icons/md";
-
+import PostDate from "../presentational/postDate";
+import AuthorName from "../presentational/authorName";
+import Postcategory from "../presentational/postcategory";
 function PostContainer() {
   return (
     <div className="post-container">
@@ -14,17 +15,9 @@ function PostContainer() {
           />
         </div>
         <div className="right-column">
-          <div className="post-date">
-            <MdEvent /> 29/03/2021
-          </div>
-          <div className="post-author">
-            <MdAssignmentInd /> Minhajur rahman
-          </div>
-          <Link href="/">
-            <a className="post-category">
-              <MdRestaurantMenu /> FOOD
-            </a>
-          </Link>
+          <PostDate />
+          <AuthorName />
+          <Postcategory />
         </div>
       </div>
       <Link href="/">

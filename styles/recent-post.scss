@@ -1,33 +1,15 @@
 .recen-post-section {
   width: 40%;
   margin-left: 35px;
-  .heading-container {
-    background-color: $primary-color;
-    padding: 20px 40px;
-    align-self: baseline;
-    color: whitesmoke;
-    text-align: center;
-    position: relative;
-    svg {
-      vertical-align: middle;
-      font-size: 1.3rem;
-      color: whitesmoke;
-    }
-    .dropdownicon {
-      position: absolute;
-      bottom: -45px;
-      color: $primary-color;
-      font-size: 5rem;
-      right: 200px;
-    }
-  }
   .post-container {
     margin-top: 25px;
     border: 2px solid #333333;
     box-shadow: 7px 8px 10px rgba(0, 0, 0, 0.3);
     .thumbnail-container {
+      width: 100%;
       display: flex;
       padding: 20px;
+      align-items: center;
       justify-content: space-between;
       .image-container {
         width: 200px;
@@ -39,24 +21,15 @@
       .right-column {
         display: flex;
         flex-direction: column;
+        font-size: small;
         .post-date,
         .post-author {
-          padding: 10px;
+          padding: 10px 0px 10px 10px;
+          text-align: center;
         }
         .post-category {
-          padding: 5px 15px;
-          background-color: $Gray;
+          margin-left: 20px;
           margin-top: 15px;
-          width: fit-content;
-          border-radius: 5px;
-          margin-top: 20px;
-          &:hover {
-            background-color: $primary-color;
-            color: whitesmoke;
-            svg {
-              color: whitesmoke;
-            }
-          }
         }
       }
     }

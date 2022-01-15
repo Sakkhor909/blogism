@@ -1,13 +1,13 @@
-import { MdDynamicFeed, MdArrowDropDown } from "react-icons/md";
+import { MdDynamicFeed } from "react-icons/md";
 import PostContainer from "./Recentposts/postContainer";
+import HeadingContainer from "./presentational/headingContainer";
 
 function RecentPost() {
   return (
     <div className="recen-post-section">
-      <div className="heading-container">
+      <HeadingContainer right="125px">
         <MdDynamicFeed /> RECENT ARTICLES
-        <MdArrowDropDown className="dropdownicon" />
-      </div>
+      </HeadingContainer>
       <PostContainer />
       <PostContainer />
       <PostContainer />
