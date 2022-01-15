@@ -1,10 +1,10 @@
 .featue-post-container {
   width: 60%;
-  margin-left: 50px;
   background-color: $primary-color;
   height: 350px;
   border-radius: 5px;
   box-shadow: 7px 8px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
   .heading-section {
     color: whitesmoke;
     padding: 20px;
@@ -24,6 +24,9 @@
       height: 210px;
       border: 16px groove whitesmoke;
       position: relative;
+      .feature-image {
+        object-fit: cover;
+      }
     }
     .details-section {
       width: 50%;
@@ -39,17 +42,20 @@
     }
   }
   .read-more-btn {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     border: 1px solid $black;
-    width: 20%;
-    margin-left: auto;
-    margin-right: 20px;
-    margin-top: 5px;
+    text-align: center;
     background-color: whitesmoke;
     transition: 0.5s;
     font-weight: bold;
     svg {
-      font-size: 1.5rem;
-      vertical-align: middle;
+      transition: none;
     }
     &:hover {
       background-color: $primary-color;

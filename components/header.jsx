@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { MdBrightness4, MdLogin, MdAppRegistration } from "react-icons/md";
-import Button from "./button";
+
 import Navbar from "./navbar";
 import Searchbar from "./searchbar";
 function Header() {
@@ -18,9 +18,9 @@ function Header() {
           <h1>Blogism</h1>
         </div>
         <div className="link-section">
-          <Button>
+          <button>
             <MdBrightness4 />
-          </Button>
+          </button>
 
           <a className="link-btn ">
             Login <MdLogin />
