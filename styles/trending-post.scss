@@ -60,3 +60,11 @@
     color: $primary-color;
   }
 }
+
+// For mobile
+
+@media only screen and (max-width: 768px) {
+  .posts-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

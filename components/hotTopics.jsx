@@ -16,9 +16,7 @@ function HotTopics() {
         <Category />
       </div>
       <Link href="/">
-        <a className="view-all-btn" style={{ marginRight: "0" + "px" }}>
-          View All
-        </a>
+        <a className="view-all-btn hot-topics-view-btn">View All</a>
       </Link>
     </>
   );

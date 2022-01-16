@@ -52,6 +52,7 @@ svg {
   color: whitesmoke;
   text-align: center;
   position: relative;
+  border-radius: 5px;
   svg {
     vertical-align: middle;
     font-size: 1.3rem;
@@ -88,3 +89,12 @@ svg {
 @import "trending-post.scss";
 @import "hotTopics";
 @import "footer";
+
+// For mobile
+
+@media only screen and (max-width: 768px) {
+  .heading-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

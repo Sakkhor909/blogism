@@ -12,6 +12,7 @@
     font-weight: bold;
     svg {
       vertical-align: middle;
+      color: whitesmoke;
     }
   }
   .feature-post {
@@ -60,6 +61,35 @@
     &:hover {
       background-color: $primary-color;
       color: whitesmoke;
+    }
+  }
+}
+
+// For mobile
+
+@media only screen and (max-width: 768px) {
+  .featue-post-container {
+    height: fit-content;
+    .heading-section {
+      font-size: 1.3rem;
+    }
+    .feature-post {
+      flex-direction: column;
+      padding-left: 0px;
+      align-items: center;
+
+      .image-section {
+        width: 100%;
+        .feature-image {
+          object-fit: contain;
+        }
+      }
+      .details-section {
+        width: 100%;
+        .title-section {
+          text-align: center;
+        }
+      }
     }
   }
 }

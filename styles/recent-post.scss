@@ -47,3 +47,18 @@
     }
   }
 }
+
+// For mobile
+
+@media only screen and (max-width: 768px) {
+  .recen-post-section {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 15px;
+    .post-container {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 25px;
+    }
+  }
+}

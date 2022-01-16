@@ -23,10 +23,11 @@ function Header() {
           </button>
 
           <a className="link-btn ">
-            Login <MdLogin />
+            <span className="head-link-text">Login</span> <MdLogin />
           </a>
           <a className="link-btn register-btn">
-            Register <MdAppRegistration />
+            <span className="head-link-text">Register</span>{" "}
+            <MdAppRegistration />
           </a>
         </div>
       </div>

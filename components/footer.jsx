@@ -16,12 +16,15 @@ function Footer() {
           </form>
         </div>
         <div className="footer-links">
-          <Link href="/">
-            <a>Report issue</a>
-          </Link>
-          <Link href="/">
-            <a>Become a author</a>
-          </Link>
+          <div className="mobile-row-links">
+            <Link href="/">
+              <a>Report issue</a>
+            </Link>
+            <Link href="/">
+              <a>Become a author</a>
+            </Link>
+          </div>
+
           <div className="identity-section">
             <Image
               src="/assets/images/logo.png"
@@ -32,12 +35,14 @@ function Footer() {
             />
             <h4>Blogism</h4>
           </div>
-          <Link href="/">
-            <a>Privacy policy</a>
-          </Link>
-          <Link href="/">
-            <a>Terms & Conditions</a>
-          </Link>
+          <div className="mobile-row-links">
+            <Link href="/">
+              <a>Privacy policy</a>
+            </Link>
+            <Link href="/">
+              <a>Terms & Conditions</a>
+            </Link>
+          </div>
         </div>
         <div className="social-section">
           <div className="link-section">

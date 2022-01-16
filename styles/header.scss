@@ -104,3 +104,33 @@ header {
     }
   }
 }
+
+// For mobile
+
+@media only screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .first-row {
+      flex-direction: column;
+      row-gap: 20px;
+      .link-section {
+        width: 100%;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+        .link-btn {
+          padding: 0;
+          .head-link-text {
+            display: none;
+          }
+        }
+      }
+    }
+    form {
+      input {
+        width: 75%;
+      }
+    }
+  }
+}
