@@ -5,6 +5,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <title>Blogism</title>
         <style>
           @import
           url(`https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap`);
