@@ -19,7 +19,7 @@ function HotTopics() {
           imageSrc={`/assets/images/Information_technology.jpg`}
           CatName={`Information Technology`}
         />
-        <Category imageSrc={`/assets/images/Sports.jpg`} CatName={`Sports`} />
+        <Category imageSrc={`/assets/images/sports.jpg`} CatName={`Sports`} />
       </div>
       <Link href="/">
         <a className="view-all-btn hot-topics-view-btn">View All</a>
