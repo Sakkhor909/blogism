@@ -1,2 +1,81 @@
 footer {
+  width: 100%;
+  padding: 25px 7% 25px 7%;
+  .content {
+    width: 100%;
+    background-color: $black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .sign-up-section {
+      width: 100%;
+      padding: 80px 50px;
+      text-align: center;
+      border-bottom: 1px solid #ffffff;
+      .sign-up-text {
+        color: whitesmoke;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+        letter-spacing: 0.5rem;
+      }
+      .sign-up-form {
+        display: flex;
+        justify-content: center;
+        input {
+          width: 30%;
+          border-bottom-left-radius: 5px;
+          border-top-left-radius: 5px;
+          border: 1px solid $primary-color;
+          outline: none;
+          padding: 5px;
+        }
+        button {
+          outline: none;
+          padding: 5px 10px;
+          border: 1px solid $primary-color;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+          color: whitesmoke;
+          svg {
+            color: whitesmoke;
+          }
+          &:hover {
+            background-color: whitesmoke;
+            color: $primary-color;
+            svg {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+    .footer-links {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px 40px;
+      border-bottom: 1px solid #ffffff;
+      .identity-section {
+        display: flex;
+        align-items: center;
+        h4 {
+          margin-left: 15px;
+          color: whitesmoke;
+        }
+      }
+    }
+    .social-section {
+      padding: 30px 30px;
+      .link-section {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .copy-right-attr {
+        color: whitesmoke;
+        margin-top: 20px;
+      }
+    }
+  }
 }
