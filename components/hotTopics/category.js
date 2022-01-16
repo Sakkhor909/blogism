@@ -1,14 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 
-function Category() {
+function Category({ imageSrc, CatName }) {
   return (
     <Link href="/">
-      <a className="category" data-categoryName="Category Name">
+      <a className="category" data-categoryname={CatName}>
         <Image
-          src="https://source.unsplash.com/random"
+          src={imageSrc}
           alt="Feature Image"
           layout="fill"
+          className="Cat-img"
         />
       </a>
     </Link>

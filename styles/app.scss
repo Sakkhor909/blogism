@@ -67,10 +67,10 @@ svg {
 }
 
 .post-category {
-  padding: 5px 10px;
+  padding: 5px;
   background-color: $Gray;
-  width: fit-content;
   border-radius: 5px;
+  text-align: center;
   &:hover {
     background-color: $primary-color;
     color: whitesmoke;

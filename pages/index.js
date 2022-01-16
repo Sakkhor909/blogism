@@ -5,7 +5,23 @@ import TrendingPost from "../components/trendingPost.jsx";
 import HotTopics from "../components/hotTopics.jsx";
 import Footer from "../components/footer.jsx";
 
-export default function Home() {
+export async function getServerSideProps() {
+  let Posts = await fetch(`https://jsonplaceholder.typicode.com/posts`)
+    .then((res) => res.json())
+    .catch((err) =>
+      console.error(`There is error in jsonplaceholder data fetching ${err}`)
+    );
+  const RecentPosts = Posts.slice(0, 4);
+  const TrendingPosts = Posts.slice(4, 8);
+  return {
+    props: {
+      RecentPosts,
+      TrendingPosts
+    }
+  };
+}
+
+export default function Home({ RecentPosts, TrendingPosts, HotPosts }) {
   return (
     <>
       <Header />
@@ -13,9 +29,9 @@ export default function Home() {
         <div className="first-row">
           <div className="first-column">
             <FeaturePost />
-            <TrendingPost />
+            <TrendingPost TrendingPosts={TrendingPosts} />
           </div>
-          <RecentPost />
+          <RecentPost RecentPosts={RecentPosts} />
         </div>
         <HotTopics />
       </div>

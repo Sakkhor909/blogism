@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { MdLocalActivity, MdReadMore } from "react-icons/md";
 import Image from "next/image";
+
 function FeaturePost() {
   return (
     <div className="featue-post-container">
@@ -10,7 +11,7 @@ function FeaturePost() {
       <div className="feature-post">
         <div className="image-section">
           <Image
-            src="https://source.unsplash.com/random"
+            src="https://source.unsplash.com/1600x900/?nature,water"
             alt="Feature Image"
             layout="fill"
             className="feature-image"

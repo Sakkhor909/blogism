@@ -3,13 +3,13 @@ import Image from "next/image";
 import PostDate from "../presentational/postDate";
 import AuthorName from "../presentational/authorName";
 import Postcategory from "../presentational/postcategory";
-function PostContainer() {
+function PostContainer({ post }) {
   return (
     <div className="post-container">
       <div className="thumbnail-container">
         <div className="image-container">
           <Image
-            src="https://source.unsplash.com/random/200x200"
+            src={`https://source.unsplash.com/800x40${post.id}/?nature`}
             alt="Feature Image"
             layout="fill"
           />
@@ -17,11 +17,11 @@ function PostContainer() {
         <div className="right-column">
           <PostDate />
           <AuthorName />
-          <Postcategory />
+          <Postcategory CatNo={post.id} />
         </div>
       </div>
       <Link href="/">
-        <a className="post-title">What is Lorem Ipsum?</a>
+        <a className="post-title">{post.title}</a>
       </Link>
     </div>
   );

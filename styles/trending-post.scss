@@ -25,10 +25,14 @@
       padding: 10px;
       font-weight: bold;
       font-size: 1.2rem;
+      height: 65px;
+      text-align: center;
     }
     .post-content {
       padding: 10px;
       line-height: 199%;
+      min-height: 180px;
+      text-align: center;
     }
     .row {
       display: flex;
@@ -37,6 +41,9 @@
       .post-date,
       .post-category {
         margin-left: auto;
+      }
+      .post-author {
+        text-align: center;
       }
     }
     .read-more-btn {

@@ -4,24 +4,19 @@ import Image from "next/image";
 import PostDate from "../presentational/postDate";
 import AuthorName from "../presentational/authorName";
 import Postcategory from "../presentational/postcategory";
-function PostCard() {
+function PostCard({ post }) {
   return (
     <div className="post-card-container">
       <div className="image-section">
         <Image
-          src="https://source.unsplash.com/random"
+          src={`https://source.unsplash.com/random/300x18${post.id}`}
           alt="Feature Image"
           layout="fill"
           className="trending-post-img"
         />
       </div>
-      <div className="post-title">
-        Lorem ipsum dolor sit amet, constur adipiscing elit.
-      </div>
-      <div className="post-content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
-        cursus eu gravida est augue in.et diam...
-      </div>
+      <div className="post-title">{post.title}</div>
+      <div className="post-content">{post.body}...</div>
       <div className="row">
         <div className="view-count">
           <MdVisibility /> 425
@@ -33,7 +28,7 @@ function PostCard() {
       </div>
       <div className="row">
         <AuthorName />
-        <Postcategory />
+        <Postcategory CatNo={post.id} />
       </div>
 
       <Link href="/">
