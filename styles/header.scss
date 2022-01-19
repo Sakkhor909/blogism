@@ -105,6 +105,31 @@ header {
   }
 }
 
+// For the dark theme
+
+[data-theme="dark"] {
+  header {
+    aside {
+      a {
+        &:hover {
+          color: whitesmoke;
+        }
+      }
+      .active {
+        color: whitesmoke;
+      }
+    }
+    form {
+      input {
+        border: 1px solid $primary-color;
+      }
+      button {
+        border: 1px solid $primary-color;
+      }
+    }
+  }
+}
+
 // For mobile
 
 @media only screen and (max-width: 768px) {

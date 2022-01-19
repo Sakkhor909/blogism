@@ -62,6 +62,16 @@ function Footer() {
           <div className="copy-right-attr">
             © Brand, Inc. 2021. We love our users!
           </div>
+          <div className="credit">
+            Developed by <br />
+            <a
+              href="http://minhajur.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Minhajur Rahman
+            </a>
+          </div>
         </div>
       </div>
     </footer>

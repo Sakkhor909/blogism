@@ -57,9 +57,15 @@ footer {
       justify-content: space-between;
       padding: 50px 40px;
       border-bottom: 1px solid #ffffff;
+
       .mobile-row-links {
         display: flex;
         column-gap: 20px;
+        a {
+          &:hover {
+            color: whitesmoke;
+          }
+        }
       }
       .identity-section {
         display: flex;
@@ -75,10 +81,23 @@ footer {
       .link-section {
         display: flex;
         justify-content: space-evenly;
+        a {
+          svg {
+            transition: 0.4s transform ease-in;
+            &:hover {
+              transform: scale(1.2);
+            }
+          }
+        }
       }
       .copy-right-attr {
         color: whitesmoke;
         margin-top: 20px;
+      }
+      .credit {
+        margin-top: 10px;
+        text-align: center;
+        color: rgba(245, 245, 245, 0.712);
       }
     }
   }

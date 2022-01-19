@@ -54,6 +54,19 @@
   }
 }
 
+// For the dark theme
+
+[data-theme="dark"] {
+  .posts-grid {
+    .post-card-container {
+      border: 1px solid whitesmoke;
+      .post-title {
+        color: $black;
+      }
+    }
+  }
+}
+
 // For mobile
 
 @media only screen and (max-width: 768px) {

@@ -21,7 +21,7 @@ export async function getServerSideProps() {
   };
 }
 
-export default function Home({ RecentPosts, TrendingPosts, HotPosts }) {
+export default function Home({ RecentPosts, TrendingPosts }) {
   return (
     <>
       <Header />

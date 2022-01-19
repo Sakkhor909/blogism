@@ -1,9 +1,30 @@
 import Image from "next/image";
-import { MdBrightness4, MdLogin, MdAppRegistration } from "react-icons/md";
-
+import { useTheme } from "next-themes";
+import {
+  MdBrightness4,
+  MdLogin,
+  MdAppRegistration,
+  MdLightMode
+} from "react-icons/md";
 import Navbar from "./navbar";
 import Searchbar from "./searchbar";
+
+const ChangeTheme = (setTheme) => {
+  if (localStorage.theme == "light") {
+    if (typeof Storage !== "undefined") {
+      localStorage.theme = "dark";
+      setTheme("dark");
+    }
+  } else {
+    if (typeof Storage !== "undefined") {
+      localStorage.theme = "light";
+      setTheme("light");
+    }
+  }
+};
+
 function Header() {
+  const { theme, setTheme } = useTheme();
   return (
     <header>
       <div className="first-row">
@@ -18,10 +39,9 @@ function Header() {
           <h1>Blogism</h1>
         </div>
         <div className="link-section">
-          <button>
-            <MdBrightness4 />
+          <button onClick={() => ChangeTheme(setTheme)} title="Change Theme">
+            {theme == "light" ? <MdBrightness4 /> : <MdLightMode />}
           </button>
-
           <a className="link-btn ">
             <span className="head-link-text">Login</span> <MdLogin />
           </a>

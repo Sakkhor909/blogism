@@ -48,6 +48,18 @@
   }
 }
 
+// For the dark theme
+
+[data-theme="dark"] {
+  .recen-post-section {
+    .post-container {
+      .thumbnail-container {
+        border: 1px solid whitesmoke;
+      }
+    }
+  }
+}
+
 // For mobile
 
 @media only screen and (max-width: 768px) {
